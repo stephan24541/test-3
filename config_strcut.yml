@@ -3,20 +3,20 @@ bootstrap_yml:
         type: label
         ggm.theming.active_theme:
             type: text
-            default: funke_digital_meinanzeiger_de
+                default: funke_digital_meinanzeiger_de
         ggm.bootstrap.config:
             type: label
             ggmArticleBundle:
                 type: label
                 enabled:
                     type: boolean
-                    	default: false
+                        default: false
                 root:
                     type: boolean
                     	default: false
                 prefix:
                     type: text
-                    	default: a
+                        default: a
                 class:
                     type: text
                     	default: ggm\ArticleBundle\ggmArticleBundle
@@ -29,7 +29,7 @@ bootstrap_yml:
                         type: boolean
                             default: false
                     prefix:
-                        type: text
+                        type: tex
                             default: cad
                     class:
                         type: text
