@@ -72,7 +72,7 @@ bootstrap_yml:
                         default: false
                     prefix:
                         type: text
-                            default: event
+                        default: event
                     class:
                         type: text
                         default: ggm\EventCalendarBundle\ggmEventCalendarBundle
