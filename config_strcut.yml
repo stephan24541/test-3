@@ -13,13 +13,13 @@ bootstrap_yml:
                         default: false
                 root:
                     type: boolean
-                    	default: false
+                        default: false
                 prefix:
                     type: text
                         default: a
                 class:
                     type: text
-                    	default: ggm\ArticleBundle\ggmArticleBundle
+                        default: ggm\ArticleBundle\ggmArticleBundle
             ggmClassifiedAdBundle:
                     type: label
                     enabled:
