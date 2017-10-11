@@ -1,0 +1,92 @@
+bootstrap_yml:
+    parameters:
+        type: label
+        ggm.theming.active_theme:
+            type: text
+            default: funke_digital_meinanzeiger_de
+        ggm.bootstrap.config:
+            type: label
+            ggmArticleBundle:
+                type: label
+                enabled:
+                    type: boolean
+                    default: false
+                root:
+                    type: boolean
+                    default: false
+                prefix:
+                    type: text
+                    default: a
+                class:
+                    type: text
+                    default: ggm\ArticleBundle\ggmArticleBundle
+            ggmClassifiedAdBundle:
+                    type: label
+                    enabled:
+                        type: boolean
+                        default: false
+                    root:
+                        type: boolean
+                        default: false
+                    prefix:
+                        type: text
+                        default: cad
+                    class:
+                        type: text
+                        default: ggm\ClassifiedAdBundle\ggmClassifiedAdBundle
+            ggmJobAdBundle:
+                    type: label
+                    enabled:
+                        type: boolean
+                        default: false
+                    root:
+                        type: boolean
+                        default: false
+                    prefix:
+                        type: text
+                        default: jobs
+                    class:
+                        type: text
+                        default: ggm\JobAdBundle\ggmJobAdBundle
+            ggmNewsAgencyBundle:
+                    type: label
+                    enabled:
+                        type: boolean
+                        default: false
+                    root:
+                        type: boolean
+                        default: false
+                    prefix:
+                        type: text
+                        default: news-agency
+                    class:
+                        type: text
+                        default: ggm\NewsAgencyBundle\ggmNewsAgencyBundle
+            ggmEventCalendarBundle:
+                    type: label
+                    enabled:
+                        type: boolean
+                        default: false
+                    root:
+                        type: boolean
+                        default: false
+                    prefix:
+                        type: text
+                        default: event
+                    class:
+                        type: text
+                        default: ggm\EventCalendarBundle\ggmEventCalendarBundle
+            ggmCustomerBundle:
+                    type: label
+                    enabled:
+                        type: boolean
+                        default: false
+                    root:
+                        type: boolean
+                        default: false
+                    prefix:
+                        type: text
+                        default: null
+                    class:
+                        type: text
+                        default: $ggm.theming.active_theme$\CustomerBundle\CustomerBundle
