@@ -6,6 +6,7 @@ bootstrap_yml:
                         type: field
                         field-type: text
                         field-default: funke_digital_meinanzeiger_de
+			field-name: 'active theme'
                     ggm.bootstrap.config:
                         type: title
                         childs:
@@ -16,18 +17,22 @@ bootstrap_yml:
                                         type: field
                                         field-type: boolean
                                         field-default: false
+					field-name: 'enabled'
                                     root:
                                         type: field
                                         field-type: boolean
                                         field-default: false
+					field-name: 'root'
                                     prefix:
                                         type: field
                                         field-type: text
-                                        field-default: a 
+                                        field-default: a
+					field-name: 'prefix'
                                     class:
                                         type: field
                                         field-type: text
                                         field-default: ggm\ArticleBundle\ggmArticleBundle 
+					field-name: 'class'
                             ggmClassifiedAdBundle:
                                     type: title
                                     childs:
@@ -35,18 +40,22 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+					    field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'root'
                                         prefix:
                                             type: field
                                             field-type: text
-                                            field-default: a 
+                                            field-default: a
+                                            field-name: 'prefix' 
                                         class:
                                             type: field
                                             field-type: text
                                             field-default: ggm\ClassifiedAdBundle\ggmClassifiedAdBundle 
+                                            field-name: 'class'
                             ggmJobAdBundle:
                                     type: title
                                     childs:
@@ -54,18 +63,22 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+				            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'root'
                                         prefix:
                                             type: field
                                             field-type: text
                                             field-default: jobs
+                                            field-name: 'prefix'
                                         class:
                                             type: field
                                             field-type: text
                                             field-default: ggm\JobAdBundle\ggmJobAdBundle
+                                            field-name: 'class'
                             ggmNewsAgencyBundle:
                                     type: title
                                     childs:
@@ -73,18 +86,22 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'root'
                                         prefix:
                                             type: field
                                             field-type: text
                                             field-default: news-agency
+                                            field-name: 'prefix'
                                         class:
                                             type: field
                                             field-type: text
                                             field-default: ggm\NewsAgencyBundle\ggmNewsAgencyBundle
+                                            field-name: 'class'
                             ggmEventCalendarBundle:
                                     type: title
                                     childs:
@@ -92,18 +109,22 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'root'
                                         prefix:
                                             type: field
                                             field-type: text
                                             field-default: event
+                                            field-name: 'prefix'
                                         class:
                                             type: field
                                             field-type: text
                                             field-default: ggm\EventCalendarBundle\ggmEventCalendarBundle
+                                            field-name: 'class'
                             ggmCustomerBundle:
                                     type: title
                                     childs:
@@ -111,15 +132,19 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
                                             field-default: false
+                                            field-name: 'root'
                                         prefix:
                                             type: field
                                             field-type: text
                                             field-default: null
+                                            field-name: 'prefix'
                                         class:
                                             type: field
                                             field-type: text
                                             field-default: ggm.theming.active_theme$\CustomerBundle\CustomerBundle
+                                            field-name: 'class'
