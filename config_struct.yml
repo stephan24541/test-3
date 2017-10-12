@@ -1,0 +1,125 @@
+bootstrap_yml:
+            parameters:
+                type: title
+                childs:
+                    ggm.theming.active_theme:
+                        type: field
+                        field-type: text
+                        field-default: funke_digital_meinanzeiger_de
+                    ggm.bootstrap.config:
+                        type: title
+                        childs:
+                            ggmArticleBundle:
+                                type: title
+                                childs:
+                                    enabled:
+                                        type: field
+                                        field-type: boolean
+                                        field-default: false
+                                    root:
+                                        type: field
+                                        field-type: boolean
+                                        field-default: false
+                                    prefix:
+                                        type: field
+                                        field-type: text
+                                        field-default: a 
+                                    class:
+                                        type: field
+                                        field-type: text
+                                        field-default: ggm\ArticleBundle\ggmArticleBundle 
+                            ggmClassifiedAdBundle:
+                                    type: title
+                                    childs:
+                                        enabled:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        root:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        prefix:
+                                            type: field
+                                            field-type: text
+                                            field-default: a 
+                                        class:
+                                            type: field
+                                            field-type: text
+                                            field-default: ggm\ClassifiedAdBundle\ggmClassifiedAdBundle 
+                            ggmJobAdBundle:
+                                    type: title
+                                    childs:
+                                        enabled:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        root:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        prefix:
+                                            type: field
+                                            field-type: text
+                                            field-default: jobs
+                                        class:
+                                            type: field
+                                            field-type: text
+                                            field-default: ggm\JobAdBundle\ggmJobAdBundle
+                            ggmNewsAgencyBundle:
+                                    type: title
+                                    childs:
+                                        enabled:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        root:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        prefix:
+                                            type: field
+                                            field-type: text
+                                            field-default: news-agency
+                                        class:
+                                            type: field
+                                            field-type: text
+                                            field-default: ggm\NewsAgencyBundle\ggmNewsAgencyBundle
+                            ggmEventCalendarBundle:
+                                    type: title
+                                    childs:
+                                        enabled:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        root:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        prefix:
+                                            type: field
+                                            field-type: text
+                                            field-default: event
+                                        class:
+                                            type: field
+                                            field-type: text
+                                            field-default: ggm\EventCalendarBundle\ggmEventCalendarBundle
+                            ggmCustomerBundle:
+                                    type: title
+                                    childs:
+                                        enabled:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        root:
+                                            type: field
+                                            field-type: boolean
+                                            field-default: false
+                                        prefix:
+                                            type: field
+                                            field-type: text
+                                            field-default: null
+                                        class:
+                                            type: field
+                                            field-type: text
+                                            field-default: ggm.theming.active_theme$\CustomerBundle\CustomerBundle
