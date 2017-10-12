@@ -33,6 +33,7 @@ bootstrap_yml:
                                         field-type: text
                                         field-default: ggm\ArticleBundle\ggmArticleBundle
                                         field-name: 'class'
+                                        field-help: 'ggm\ArticleBundle\..\..'
                             ggmClassifiedAdBundle:
                                     type: title
                                     childs:
@@ -56,6 +57,7 @@ bootstrap_yml:
                                             field-type: text
                                             field-default: ggm\ClassifiedAdBundle\ggmClassifiedAdBundle 
                                             field-name: 'class'
+                                            field-help: 'ggm\ClassifiedAdBundle\..\..'
                             ggmJobAdBundle:
                                     type: title
                                     childs:
