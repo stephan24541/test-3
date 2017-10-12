@@ -6,7 +6,7 @@ bootstrap_yml:
                         type: field
                         field-type: text
                         field-default: funke_digital_meinanzeiger_de
-			field-name: 'active theme'
+                        field-name: 'active theme'
                     ggm.bootstrap.config:
                         type: title
                         childs:
@@ -17,22 +17,22 @@ bootstrap_yml:
                                         type: field
                                         field-type: boolean
                                         field-default: false
-					field-name: 'enabled'
+                                        field-name: 'enabled'
                                     root:
                                         type: field
                                         field-type: boolean
                                         field-default: false
-					field-name: 'root'
+                                        field-name: 'root'
                                     prefix:
                                         type: field
                                         field-type: text
                                         field-default: a
-					field-name: 'prefix'
+                                        field-name: 'prefix' 
                                     class:
                                         type: field
                                         field-type: text
-                                        field-default: ggm\ArticleBundle\ggmArticleBundle 
-					field-name: 'class'
+                                        field-default: ggm\ArticleBundle\ggmArticleBundle
+                                        field-name: 'class'
                             ggmClassifiedAdBundle:
                                     type: title
                                     childs:
@@ -40,7 +40,7 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
-					    field-name: 'enabled'
+                                            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
@@ -49,8 +49,8 @@ bootstrap_yml:
                                         prefix:
                                             type: field
                                             field-type: text
-                                            field-default: a
-                                            field-name: 'prefix' 
+                                            field-default: a 
+                                            field-name: 'prefix'
                                         class:
                                             type: field
                                             field-type: text
@@ -63,7 +63,7 @@ bootstrap_yml:
                                             type: field
                                             field-type: boolean
                                             field-default: false
-				            field-name: 'enabled'
+                                            field-name: 'enabled'
                                         root:
                                             type: field
                                             field-type: boolean
