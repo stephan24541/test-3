@@ -1,4 +1,5 @@
 bootstrap_yml:
+            filepath_for_config: '/tmp/eintest/'
             parameters:
                 type: title
                 childs:
