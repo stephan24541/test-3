@@ -26,7 +26,7 @@ parameters_yml:
                                         port:
                                             type: field
                                             field-type: text
-                                            field-default: 'www.example.com'
+                                            field-default: '43473'
                                             field-name: 'Adresse'
                             options:
                                 type: title
