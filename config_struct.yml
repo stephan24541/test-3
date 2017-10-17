@@ -14,10 +14,6 @@ parameters_yml:
                                 array-type: collection
                                 array-keys: false
                                 array-childs:
-                                    type: array
-                                    array-type: collection
-                                    array-keys: false
-                                    array-childs:
                                         fqdn:
                                             type: field
                                             field-type: text
