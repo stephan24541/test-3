@@ -13,11 +13,13 @@ parameters_yml:
                                 type: array
                                 array-type: collection
                                 array-keys: false
+                                array-max: 1
                                 array-childs:
                                     test:
                                         type: array
                                         array-type: collection
                                         array-keys: false
+                                        array-max: 3
                                         array-childs:
                                             fqdn:
                                                 type: field
@@ -28,7 +30,7 @@ parameters_yml:
                                                 type: field
                                                 field-type: text
                                                 field-default: '43473'
-                                                field-name: 'Adresse'
+                                                field-name: 'Port'
                             options:
                                 type: title
                                 childs:
