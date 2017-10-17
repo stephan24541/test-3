@@ -41,29 +41,3 @@ parameters_yml:
                                         field-type: text
                                         field-default: 1440
                                         field-name: 'expiretime'
-            ggm.global.root_route: 
-                type: field
-                field-type: text
-                field-default: null
-                field-name: 'root route'
-            ggm.global.phone_country_codes:
-                type: titel
-                childs:
-                    DE:
-                        type: field
-                        field-type: text
-                        field-default: '+49'
-                        field-name: 'phone country code'
-            ggm.global.email:
-                type: titel
-                childs:
-                    address:
-                    type: field
-                    field-type: text
-                    field-default: webmaster@example.com
-                    field-name: 'address'
-                sender_name: 
-                    type: field
-                    field-type: text
-                    field-default: webmaster
-                    field-name: 'sender name'
