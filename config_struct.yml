@@ -44,3 +44,25 @@ parameters_yml:
                                         field-type: text
                                         field-default: 1440
                                         field-name: 'expiretime'
+                ejhil:
+                    type: array
+                    array-type: collection
+                    array-keys: false
+                    array-max: 1
+                    array-childs:
+                        test:
+                            type: array
+                            array-type: collection
+                            array-keys: false
+                            array-max: 3
+                            array-childs:
+                                fqdn:
+                                    type: field
+                                    field-type: text
+                                    field-default: 'www.example.com'
+                                    field-name: 'Adresse'
+                                port:
+                                    type: field
+                                    field-type: text
+                                    field-default: '43473'
+                                    field-name: 'Port'
