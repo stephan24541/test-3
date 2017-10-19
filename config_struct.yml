@@ -1,5 +1,4 @@
 parameters_yml:
-
     filepath_for_config: '/paramet'
     parameters:
         stage: 1
