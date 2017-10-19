@@ -19,25 +19,18 @@ parameters_yml:
                                 array-keys: false
                                 array-max: 1
                                 childs:
-                                    test:
-                                        stage: 5
-                                        type: array
-                                        array-type: collection
-                                        array-keys: false
-                                        array-max: 3
-                                        childs:
-                                            fqdn:
-                                                stage: 6
-                                                type: field
-                                                field-type: text
-                                                field-default: 'www.example.com'
-                                                field-name: 'Adresse'
-                                            port:
-                                                stage: 7
-                                                type: field
-                                                field-type: text
-                                                field-default: '43473'
-                                                field-name: 'Port'
+                                    fqdn:
+                                        stage: 6
+                                        type: field
+                                        field-type: text
+                                        field-default: 'www.example.com'
+                                        field-name: 'Adresse'
+                                    port:
+                                        stage: 7
+                                        type: field
+                                        field-type: text
+                                        field-default: '43473'
+                                        field-name: 'Port'
                             options:
                                 stage: 4
                                 type: title
