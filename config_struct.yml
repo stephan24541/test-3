@@ -60,7 +60,7 @@ parameters_yml:
                                 stage: 4
                                 type: array
                                 array-type: keyValue
-                                array-may: 3
+                                array-max: 3
                                 array-merge: false
                                 childs:
                                     key:
