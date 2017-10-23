@@ -1,76 +1,75 @@
---- 
-parameters_yml: 
-  filepath_for_config: /paramet
-  parameters: 
-    childs: 
-      ggm.global.session.config: 
-        childs: 
-          memcache: 
-            childs: 
-              key-value-test: 
-                array-may: 3
-                array-merge: false
-                array-type: keyValue
-                childs: 
-                  key: 
-                    field-default: 0
-                    field-name: key
-                    field-type: text
-                    type: field
-                  value: 
-                    field-default: einWert
-                    field-name: value
-                    field-type: text
-                    type: field
-                stage: 4
-                type: array
-              options: 
-                childs: 
-                  expiretime: 
-                    field-default: 1440
-                    field-name: expiretime
-                    field-type: text
-                    stage: 5
-                    type: field
-                  prefix: 
-                    field-default: CHANGEME
-                    field-name: prefix
-                    field-type: text
-                    stage: 5
-                    type: field
-                stage: 4
-                type: title
-              servers: 
-                array-keys: false
-                array-max: 1
-                array-merge: true
-                array-type: collection
-                childs: 
-                  test: 
-                    array-keys: false
-                    array-max: 3
-                    array-merge: false
-                    array-type: collection
-                    childs: 
-                      fqdn: 
-                        field-default: www.example.com
-                        field-name: Adresse
-                        field-type: text
-                        stage: 6
-                        type: field
-                      port: 
-                        field-default: "43473"
-                        field-name: Port
-                        field-type: text
-                        stage: 6
-                        type: field
-                    stage: 5
-                    type: array
-                stage: 4
-                type: array
-            stage: 3
-            type: title
-        stage: 2
+parameters_yml:
+    filepath_for_config: '/paramet'
+    parameters:
+        stage: 1
         type: title
-    stage: 1
-    type: title
+        childs:
+            ggm.global.session.config:
+                stage: 2
+                type: title
+                childs:
+                    memcache:
+                        stage: 3
+                        type: title
+                        childs:    
+                            servers:
+                                stage: 4
+                                type: array
+                                array-type: collection
+                                array-keys: false
+                                array-max: 1
+                                array-merge: true
+                                childs:
+                                    test:
+                                        stage: 5
+                                        type: array
+                                        array-type: collection
+                                        array-keys: false
+                                        array-max: 3
+                                        array-merge: false
+                                        childs:
+                                            fqdn:
+                                                stage: 6
+                                                type: field
+                                                field-type: text
+                                                field-default: 'www.example.com'
+                                                field-name: 'Adresse'
+                                            port:
+                                                stage: 6
+                                                type: field
+                                                field-type: text
+                                                field-default: '43473'
+                                                field-name: 'Port'
+                            options:
+                                stage: 4
+                                type: title
+                                childs:
+                                    prefix:
+                                        stage: 5
+                                        type: field
+                                        field-type: text
+                                        field-default: CHANGEME
+                                        field-name: 'prefix'
+                                    expiretime:
+                                        stage: 5
+                                        type: field
+                                        field-type: text
+                                        field-default: 1440
+                                        field-name: 'expiretime'
+                            key-value-test:
+                                stage: 4
+                                type: array
+                                array-type: keyValue
+                                array-may: 3
+                                array-merge: false
+                                childs:
+                                    key:
+                                        type: field
+                                        field-type: text
+                                        field-default: 0
+                                        field-name: 'key'
+                                    value:
+                                        type: field
+                                        field-type: text
+                                        field-default: 'einWert'
+                                        field-name: 'value'
