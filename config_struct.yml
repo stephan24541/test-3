@@ -1,9 +1,308 @@
-parameters_yml:
-    filepath_for_config: '/paramet'
+bootstrap.yml:
+    filepath_for_config: 'app/config/bootstrap.yml'
     parameters:
         stage: 1
         type: title
         childs:
+            ggm.theming.active_theme:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: active_theme
+            ggm.bootstrap.config:
+                stage: 2
+                type: title
+                childs:
+                    ggmArticleBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: a
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: 'ggm\ArticleBundle\ggmArticleBundle'
+                                field-name: class
+                    ggmClassifiedAdBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: cad
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: 'ggm\ClassifiedAdBundle\ggmClassifiedAdBundle'
+                                field-name: class
+                    ggmJobAdBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: jobs
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: 'ggm\JobAdBundle\ggmJobAdBundle'
+                                field-name: class
+                    ggmNewsAgencyBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: news-agency
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: 'ggm\NewsAgencyBundle\ggmNewsAgencyBundle'
+                                field-name: class
+                    ggmEventCalendarBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: event
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: 'ggm\EventCalendarBundle\ggmEventCalendarBundle'
+                                field-name: class
+                    ggmCustomerBundle:
+                        stage: 3
+                        type: title
+                        childs:
+                            enabled:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: enabled
+                            root:
+                                stage: 4
+                                type: field
+                                field-type: boolean
+                                field-default: false
+                                field-name: root
+                            prefix:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default:
+                                field-name: prefix
+                            class:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: '$ggm.theming.active_theme$\CustomerBundle\CustomerBundle'
+                                field-name: class
+parameters.yml:
+    filepath_for_config: 'app/config/parameters.yml'
+    parameters:
+        stage: 1
+        type: title
+        childs:
+            # Assetic Settings
+            assetic.filters.sass.bin:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '/usr/local/bin/sass'
+                field-name: assetic filters sass bin
+            assetic.ruby:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '/usr/bin/ruby'
+                field-name: assetic ruby
+            # Database Settings
+            database_driver:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: pdo_mysql
+                field-name: database driver
+            database_path:
+                stage: 2
+                type: field
+                field-type: text
+                field-default:
+                field-name: database path
+            # Database Master
+            database_host:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: database host
+            database_port:
+                stage: 2
+                type: field
+                field-type: integer
+                field-default: 3306
+                field-name: database port
+            database_name:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: database name
+            database_user:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: database user
+            database_password:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: database password
+            # Mail Settings
+            mailer_transport:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: smtp
+                field-name: mailer transport
+            mailer_host:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: 127.0.0.1
+                field-name: mailer_host
+            mailer_user:
+                stage: 2
+                type: field
+                field-type: text
+                field-default:
+                field-name: mailer_user
+            mailer_password:
+                stage: 2
+                type: field
+                field-type: text
+                field-default:
+                field-name: mailer_password
+            # Framework Settings
+            framework.translator.fallback_locale:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: en
+                field-name: framework translator fallback locale
+            framework.default_locale:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: en_US.UTF-8
+                field-name: framework default locale
+            framework.secret:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: 9ab5cb670f02031674e24231026a9e4f2
+                field-name: framework secret
+            # AssetsVersion
+            assets_version:
+                stage: 2
+                type: field
+                field-type: text
+                field-default:
+                field-name: assets version
+            # global
+            ggm.global.session.handler:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: 'memcache'
+                field-name: ggm global session handler
             ggm.global.session.config:
                 stage: 2
                 type: title
@@ -11,35 +310,26 @@ parameters_yml:
                     memcache:
                         stage: 3
                         type: title
-                        childs:    
+                        childs:
                             servers:
                                 stage: 4
                                 type: array
                                 array-type: collection
                                 array-keys: false
-                                array-max: 1
-                                array-merge: true
+                                array-max: 5
                                 childs:
-                                    test:
+                                    fqdn:
                                         stage: 5
-                                        type: array
-                                        array-type: collection
-                                        array-keys: false
-                                        array-max: 3
-                                        array-merge: false
-                                        childs:
-                                            fqdn:
-                                                stage: 6
-                                                type: field
-                                                field-type: text
-                                                field-default: 'www.example.com'
-                                                field-name: 'Adresse'
-                                            port:
-                                                stage: 6
-                                                type: field
-                                                field-type: text
-                                                field-default: '43473'
-                                                field-name: 'Port'
+                                        type: field
+                                        field-type: text
+                                        field-default: 'angrod.gogol-medien.local'
+                                        field-name: server
+                                    port:
+                                        stage: 5
+                                        type: field
+                                        field-type: text
+                                        field-default: 11211
+                                        field-name: port
                             options:
                                 stage: 4
                                 type: title
@@ -56,20 +346,531 @@ parameters_yml:
                                         field-type: text
                                         field-default: 1440
                                         field-name: 'expiretime'
-                            key-value-test:
+            ggm.global.root_route:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm global root route
+            ggm.global.phone_country_codes:
+                stage: 2
+                type: array
+                array-type: keyValue
+                array-max: 5
+                array-merge: false
+                childs:
+                    key:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: 'DE'
+                        field-name: County Code
+                    value:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '+49'
+                        field-name: primary prefix
+            ggm.global.google:
+                stage: 2
+                type: title
+                childs:
+                    api_key:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: api key
+                    maps:
+                        stage: 3
+                        type: title
+                        childs:
+                            default_lat:
                                 stage: 4
-                                type: array
-                                array-type: keyValue
-                                array-max: 3
-                                array-merge: false
-                                childs:
-                                    key:
-                                        type: field
-                                        field-type: text
-                                        field-default: 0
-                                        field-name: 'key'
-                                    value:
-                                        type: field
-                                        field-type: text
-                                        field-default: 'einWert'
-                                        field-name: 'value'
+                                type: field
+                                field-type: text
+                                field-default: '~'
+                                field-name: default lat
+                            default_lng:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: '~'
+                                field-name: default lng
+                            default_zoom:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: '~'
+                                field-name: default zoom
+            ggm.global.email:
+                stage: 2
+                type: title
+                childs:
+                    adress:
+                        stage: 3
+                        type: field
+                        field-type: email
+                        field-default: webmaster@example.com
+                        field-name: adress
+                    sender_name:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: webmaster
+                        field-name: sender name
+            ggm.global.report:
+                stage: 2
+                type: title
+                childs:
+                    enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: enabled
+                    delivery_email:
+                        stage: 3
+                        type: field
+                        field-type: email
+                        field-default: webmaster@example.com
+                        field-name: delivery email
+            ggm.global.feedback:
+                stage: 2
+                type: title
+                childs:
+                    enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: enabled
+                    delivery_email:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: webmaster@example.com
+                        field-name: delivery email
+            # portal_domain (temporary rma specific)
+            portal_domain:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: portal domain (rma specific)
+            # MediaBundle
+            ggm_media.imagemagick_bin:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: /usr/bin/convert
+                field-name: ggm media imagemagick bin
+            ggm_media.storage:
+                stage: 2
+                type: title
+                childs:
+                    local_delivery_domain:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: 'localhost:8000'
+                        field-name: local delivery domain
+                    local_delivery_path_prefix_override:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: local delivery path prefix override
+                    default_scheme:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '%ggm.routing.scheme%'
+                        field-name: default scheme
+                    delete_local_files:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: delete local files
+                    remote_storages:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: remote storages
+            # ClassifiedAdBundle
+            ggm.classifiedad.advert:
+                stage: 2
+                type: title
+                childs:
+                    approval:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: direct
+                        field-name: approval
+                    print_optional:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: print optional
+                    print_consecutive_max:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 1
+                        field-name: print consecutive max
+                    anonymous_adverts_enable:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: true
+                        field-name: anonymous adverts enable
+                    commercial_type_enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: commercial type enabled
+                    print_description_minlen:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 16
+                        field-name: print description minlen
+                    print_description_maxlen:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 280
+                        field-name: print description maxlen
+                    print_options:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: print options
+                    print_product_list:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: grouped
+                        field-name: print product list
+                    show_aggregations_counter:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: show aggregations counter
+                    hide_zero_aggregations:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: true
+                        field-name: hide zero aggregations
+                    confirm_step_checkboxes:
+                        stage: 3
+                        type: array
+                        array-type: collection
+                        array-max: 5
+                        array-keys: false
+                        array-merge: true
+                        childs:
+                            confirm step checkboxes:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: "[accept_terms_of_service]"
+                                field-name: name
+            ggm.classifiedad.email:
+                stage: 2
+                type: title
+                childs:
+                    from_email:
+                        stage: 3
+                        type: field
+                        field-type: email
+                        field-default: webmaster@example.com
+                        field-name: from email
+                    advert_notification_enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: advert notification enabled
+                    custom_redirect_service:
+                        stage: 3
+                        type: field
+                        field-type: email
+                        field-default: webmaster@example.com
+                        field-name: custom redirect service
+            # Routing
+            ggm.routing.scheme:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: http
+                field-name: ggm routing scheme
+            ggm.routing.redirects:
+                stage: 2
+                type: title
+                childs:
+                    static_redirects:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: static redirects
+                    not_found_redirects_enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: not found redirects enabled
+                    custom_redirect_service:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: custom redirect service
+            # Paid Services
+            service_fees:
+                stage: 2
+                type: array
+                array-type: collection
+                array-keys: true
+                array-max: 5
+                childs:
+                    regular:
+                        stage: 3
+                        type: array
+                        array-type: collection
+                        array-keys: false
+                        array-max: 5
+                        childs:
+                            regularfield:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: ~
+                                field-name: regular
+                    commercial:
+                        stage: 3
+                        type: array
+                        array-type: collection
+                        array-keys: false
+                        array-max: 5
+                        childs:
+                            commercialfield:
+                                stage: 4
+                                type: field
+                                field-type: text
+                                field-default: ~
+                                field-name: commercial
+            # ggm_job_ad
+            ggm.jobad.config:
+                stage: 2
+                type: title
+                childs:
+                    advert_list_count:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 5
+                        field-name: advert list count
+                    advert_list_valid_time:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 0
+                        field-name: advert list valid time
+                    advert_init_count:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 7
+                        field-name: advert init count
+                    advert_load_count:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 5
+                        field-name: advert load count
+                    disable_socialshare_buttons:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '[]'
+                        field-name: disable socialshare buttons
+                    preset_advert_period_in_days:
+                        stage: 3
+                        type: field
+                        field-type: integer
+                        field-default: 0
+                        field-name: preset advert period in days
+            # Payment
+            payment_active:
+                stage: 2
+                type: field
+                field-type: boolean
+                field-default: false
+                field-name: payment active
+            payment_from_email:
+                stage: 2
+                type: field
+                field-type: email
+                field-default: webmaster@example.com
+                field-name: payment from email
+            payment_allowed_methods:
+                stage: 2
+                type: array
+                array-type: collection
+                array-keys: false
+                array-max: 5
+                array-merge: true
+                childs:
+                    methods:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: ~
+                        field-name: method
+            payment_default_method:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: paymill_credit_card
+                field-name: payment default method
+            paymill_api_private_key:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: notInUse
+                field-name: paymill api private key
+            paymill_api_public_key:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: notInUse
+                field-name: paymill api public key
+            # WebTracking
+            ggm.web_tracking.plugins:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm web tracking plugins
+            # UserBundle
+            ggm_user.default_group:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm user default group
+            ggm_user.segments:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm user segments
+            ggm.user.personal_message:
+                stage: 2
+                type: title
+                childs:
+                    enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: true
+                        field-name: enabled
+            # ArticleBundle
+
+            # CMS Bundle
+            ggm.cms.page.templates:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm cms page templates
+            ggm.cms.page.bundles:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm cms page bundles
+            ggm.cms.teaser.override_templates:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm cms teaser override templates
+            # Advertisement
+            ggm_advertisement.enabled:
+                stage: 2
+                type: field
+                field-type: boolean
+                field-default: false
+                field-name: ggm advertisement enabled
+            # Task Bundle
+            ggm.task.config.deferred:
+                stage: 2
+                type: title
+                childs:
+                    dispatcher:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: ggm\TaskBundle\Dispatcher\ManualDispatcher
+                        field-name: ggm.task.config.deferred
+                    dispatcher_config:
+                        stage: 3
+                        type: field
+                        field-type: text
+                        field-default: '~'
+                        field-name: dispatcher config
+            ggm.task.config.scheduled:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm task config scheduled
+            # AAWS Bundle
+            ggm.aws.s3:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm aws s3
+            # Legacy Bundle
+            ggm_legacy.enabled:
+                stage: 2
+                type: field
+                field-type: boolean
+                field-default: false
+                field-name: ggm legacy enabled
+            ggm_legacy.settings:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm legacy settings
+            # PPS Bundle
+            ggm.pps.settings:
+                stage: 2
+                type: field
+                field-type: text
+                field-default: '~'
+                field-name: ggm pps settings
+            # OAuthServer Bundle
+            ggm.oauth.server:
+                stage: 2
+                type: title
+                childs:
+                    login_enabled:
+                        stage: 3
+                        type: field
+                        field-type: boolean
+                        field-default: false
+                        field-name: login enabled
