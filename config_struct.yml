@@ -356,7 +356,6 @@ parameters.yml:
                 type: array
                 array-type: keyValue
                 array-max: 5
-                array-merge: false
                 childs:
                     key:
                         stage: 3
@@ -574,7 +573,6 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
-                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -643,7 +641,6 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
-                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -656,7 +653,6 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
-                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -723,7 +719,6 @@ parameters.yml:
                 type: array
                 array-type: collection
                 array-max: 5
-                array-merge: true
                 childs:
                     0:
                         stage: 3
