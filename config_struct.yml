@@ -315,16 +315,15 @@ parameters.yml:
                                 stage: 4
                                 type: array
                                 array-type: collection
-                                array-keys: false
                                 array-max: 5
                                 childs:
-                                    fqdn:
+                                    0:
                                         stage: 5
                                         type: field
                                         field-type: text
                                         field-default: 'angrod.gogol-medien.local'
                                         field-name: server
-                                    port:
+                                    1:
                                         stage: 5
                                         type: field
                                         field-type: text
@@ -364,7 +363,7 @@ parameters.yml:
                         type: field
                         field-type: text
                         field-default: 'DE'
-                        field-name: County Code
+                        field-name: country code
                     value:
                         stage: 3
                         type: field
@@ -575,10 +574,9 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
-                        array-keys: false
                         array-merge: true
                         childs:
-                            confirm step checkboxes:
+                            0:
                                 stage: 4
                                 type: field
                                 field-type: text
@@ -638,19 +636,16 @@ parameters.yml:
             # Paid Services
             service_fees:
                 stage: 2
-                type: array
-                array-type: collection
-                array-keys: true
-                array-max: 5
+                type: title
                 childs:
                     regular:
                         stage: 3
                         type: array
                         array-type: collection
-                        array-keys: false
                         array-max: 5
+                        array-merge: true
                         childs:
-                            regularfield:
+                            0:
                                 stage: 4
                                 type: field
                                 field-type: text
@@ -660,10 +655,10 @@ parameters.yml:
                         stage: 3
                         type: array
                         array-type: collection
-                        array-keys: false
                         array-max: 5
+                        array-merge: true
                         childs:
-                            commercialfield:
+                            0:
                                 stage: 4
                                 type: field
                                 field-type: text
@@ -727,11 +722,10 @@ parameters.yml:
                 stage: 2
                 type: array
                 array-type: collection
-                array-keys: false
                 array-max: 5
                 array-merge: true
                 childs:
-                    methods:
+                    0:
                         stage: 3
                         type: field
                         field-type: text
