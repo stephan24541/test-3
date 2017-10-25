@@ -20,13 +20,13 @@ bootstrap.yml:
                         maxMessage: 'Eingabe zu lang'
             ggm.bootstrap.config:
                 optional: true
-                has-optional: true
                 stage: 2
                 type: title
                 childs:
                     ggmArticleBundle:
                         stage: 3
                         type: title
+                        has-optional: true
                         childs:
                             enabled:
                                 optional: true
