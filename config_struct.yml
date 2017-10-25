@@ -10,6 +10,13 @@ bootstrap.yml:
                 field-type: text
                 field-default: '~'
                 field-name: active_theme
+                field-constraint:
+                    constraint-name: Length
+                    constraint-options:
+                        min: 5
+                        max: 30
+                        minMessage: 'Eingabe zu kurz'
+                        maxMessage: 'Eingabe zu lang'
             ggm.bootstrap.config:
                 stage: 2
                 type: title
@@ -356,6 +363,7 @@ parameters.yml:
                 type: array
                 array-type: keyValue
                 array-max: 5
+                array-merge: false
                 childs:
                     key:
                         stage: 3
@@ -573,6 +581,7 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
+                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -641,6 +650,7 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
+                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -653,6 +663,7 @@ parameters.yml:
                         type: array
                         array-type: collection
                         array-max: 5
+                        array-merge: true
                         childs:
                             0:
                                 stage: 4
@@ -719,6 +730,7 @@ parameters.yml:
                 type: array
                 array-type: collection
                 array-max: 5
+                array-merge: true
                 childs:
                     0:
                         stage: 3
