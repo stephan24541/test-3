@@ -3,6 +3,7 @@ bootstrap.yml:
     parameters:
         stage: 1
         type: title
+        has-optional: true
         childs:
             ggm.theming.active_theme:
                 stage: 2
@@ -18,6 +19,8 @@ bootstrap.yml:
                         minMessage: 'Eingabe zu kurz'
                         maxMessage: 'Eingabe zu lang'
             ggm.bootstrap.config:
+                optional: true
+                has-optional: true
                 stage: 2
                 type: title
                 childs:
@@ -26,6 +29,7 @@ bootstrap.yml:
                         type: title
                         childs:
                             enabled:
+                                optional: true
                                 stage: 4
                                 type: field
                                 field-type: boolean
