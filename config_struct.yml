@@ -11,13 +11,17 @@ bootstrap.yml:
                 field-type: text
                 field-default: '~'
                 field-name: active_theme
-                field-constraint:
-                    constraint-name: Length
-                    constraint-options:
-                        min: 5
-                        max: 30
-                        minMessage: 'Eingabe zu kurz'
-                        maxMessage: 'Eingabe zu lang'
+                field-constraints:
+                    0:
+                        constraint-name: Length
+                        constraint-options:
+                            min: 5
+                            max: 30
+                            minMessage: 'Eingabe zu kurz'
+                            maxMessage: 'Eingabe zu lang'
+                    1:
+                        constraint-name: NotBlank
+                        constraint-options:
             ggm.bootstrap.config:
                 optional: true
                 stage: 2
