@@ -331,13 +331,14 @@ parameters.yml:
                                 type: array
                                 array-type: collection
                                 array-max: 5
-                                array-constraint:
-                                    constraint-name: Count
-                                    constraint-options:
-                                        min: 1
-                                        max: 3
-                                        minMessage: 'Zu wenig Server angegeben'
-                                        maxMessage: 'Zu viele Server angegeben'
+                                array-constraints:
+                                    0:
+                                        constraint-name: Count
+                                        constraint-options:
+                                            min: 1
+                                            max: 3
+                                            minMessage: 'Zu wenig Server angegeben'
+                                            maxMessage: 'Zu viele Server angegeben'
                                 childs:
                                     0:
                                         stage: 5
@@ -345,19 +346,21 @@ parameters.yml:
                                         field-type: text
                                         field-default: 'angrod.gogol-medien.local'
                                         field-name: server
-                                        field-constraint:
-                                            constraint-name: Url
+                                        field-constraints:
+                                            0:
+                                                constraint-name: Url
                                     1:
                                         stage: 5
                                         type: field
                                         field-type: integer
                                         field-default: 11211
                                         field-name: port
-                                        field-constraint:
-                                            constraint-name: Range
-                                            constraint-options:
-                                                min: 1000
-                                                max: 65535
+                                        field-constraints:
+                                            0:
+                                                constraint-name: Range
+                                                constraint-options:
+                                                    min: 1000
+                                                    max: 65535
                             options:
                                 stage: 4
                                 type: title
