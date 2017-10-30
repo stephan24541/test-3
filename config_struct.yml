@@ -27,7 +27,7 @@ bootstrap.yml:
                 childs:
                     ggmArticleBundle:    
                         type: title 
-                        title-name: 'default Name' '
+                        title-name: 'default Name'
                         childs:
                             enabled:
                                 optional: true
