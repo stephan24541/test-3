@@ -282,7 +282,8 @@ parameters.yml:
                         title-name: 'default Name'
                         childs:
                             servers:
-                                type: array
+                                type: array 
+                                array-name: 'default name'                                
                                 array-type: collection
                                 array-max: 5
                                 array-constraints:
@@ -333,7 +334,8 @@ parameters.yml:
                 field-default: '~'
                 field-name: ggm global root route
             ggm.global.phone_country_codes:
-                type: array
+                type: array 
+                array-name: 'default name'                
                 array-type: keyValue
                 array-max: 5
                 array-merge: false
@@ -520,7 +522,8 @@ parameters.yml:
                         field-default: true
                         field-name: hide zero aggregations
                     confirm_step_checkboxes:
-                        type: array
+                        type: array 
+                        array-name: 'default name'                        
                         array-type: collection
                         array-max: 5
                         array-merge: true
@@ -580,7 +583,8 @@ parameters.yml:
                 title-name: 'default Name'
                 childs:
                     regular:
-                        type: array
+                        type: array 
+                        array-name: 'default name'                        
                         array-type: collection
                         array-max: 5
                         array-merge: true
@@ -591,7 +595,8 @@ parameters.yml:
                                 field-default: ~
                                 field-name: regular
                     commercial:
-                        type: array
+                        type: array 
+                        array-name: 'default name'                        
                         array-type: collection
                         array-max: 5
                         array-merge: true
@@ -648,7 +653,8 @@ parameters.yml:
                 field-default: webmaster@example.com
                 field-name: payment from email
             payment_allowed_methods:
-                type: array
+                type: array 
+                array-name: 'default name'                
                 array-type: collection
                 array-max: 5
                 array-merge: true
