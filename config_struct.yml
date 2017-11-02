@@ -796,11 +796,11 @@ parameters.yml:
                                         field-default: ~
                                         field-name: 'base_fee'
                                     options:
-                                        type: titel
+                                        type: title
                                         title-name: 'options'
                                         childs:
                                             item_count_modifier:
-                                                type: titel
+                                                type: title
                                                 title-name: 'item_count_modifier'
                                                 childs:
                                                     default_multiplicator:
