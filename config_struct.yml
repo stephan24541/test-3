@@ -794,7 +794,7 @@ parameters.yml:
                                         type: field
                                         field-type: text
                                         field-default: ~
-                                        field-name: 'FQDN von Service'
+                                        field-name: 'base_fee'
                                     options:
                                         type: titel
                                         title-name: 'options'
