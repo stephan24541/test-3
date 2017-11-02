@@ -778,15 +778,53 @@ parameters.yml:
                     regular:
                         type: array 
                         array-name: 'default name'                        
-                        array-type: collection
+                        array-type: keyValue
                         array-max: 5
-                        array-merge: true
                         childs:
-                            0:
+                            key:
                                 type: field
                                 field-type: text
                                 field-default: ~
-                                field-name: regular
+                                field-name: 'FQDN von Service'
+                            value:
+                                type: title
+                                title-name: 'Config für Service'
+                                childs:
+                                    base_fee:
+                                        type: field
+                                        field-type: text
+                                        field-default: ~
+                                        field-name: 'FQDN von Service'
+                                    options:
+                                        type: titel
+                                        title-name: 'options'
+                                        childs:
+                                            item_count_modifier:
+                                                type: titel
+                                                title-name: 'item_count_modifier'
+                                                childs:
+                                                    default_multiplicator:
+                                                        type: field
+                                                        field-type: text
+                                                        field-default: 0.25
+                                                        field-name: 'default_multiplicator'
+                                                    segments:
+                                                            type: array 
+                                                            array-name: 'default name'
+                                                            array-type: keyValue
+                                                            array-max: 5
+                                                            childs:
+                                                                key:
+                                                                    type: field
+                                                                    field-type: text
+                                                                    field-default: ~
+                                                                    field-name: 'Anzahl Elemente'
+                                                                value:
+                                                                    type: field
+                                                                    field-type: text
+                                                                    field-default: ~
+                                                                    field-name: 'Multiplikator'
+
                     commercial:
                         type: array 
                         array-name: 'default name'                        
