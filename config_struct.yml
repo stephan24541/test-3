@@ -3,6 +3,7 @@ parameters.yml:
     parameters:
         type: title 
         title-name: 'default Name'
+        optional-only-one: true
         childs:
             key:
                 type: field
@@ -10,7 +11,16 @@ parameters.yml:
                 field-default: ~
                 field-name: 'choicetype test'
                 field-choices: {eintest: local, eintest2: unlocal}
-                null-when-empty: true       
+                null-when-empty: true
+                optional: true
+            key2:
+                type: field
+                field-type: multiChoice
+                field-default: ~
+                field-name: 'choicetype test'
+                field-choices: {eintest: local, eintest2: unlocal}
+                null-when-empty: true
+                optional: true     
             service_fees:
                 type: title 
                 title-name: 'default Name'
