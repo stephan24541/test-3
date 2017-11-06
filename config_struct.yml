@@ -80,13 +80,23 @@ parameters.yml:
                     commercial:
                         type: array 
                         array-name: 'default name'                        
-                        array-type: collection
+                        array-type: keyValue
                         array-max: 5
                         array-merge: true
-                        null-when-empty: true
                         childs:
-                            0:
+                            key:
                                 type: field
                                 field-type: text
                                 field-default: ~
-                                field-name: commercial
+                                field-name: 'FQDN von Service'
+                            value:
+                                type: array 
+                                array-name: 'default name'
+                                array-type: collection
+                                array-max: 5
+                                childs:
+                                    0:
+                                        type: field
+                                        field-type: integer
+                                        field-default: -1
+                                        field-name: 'Multiplikator'
