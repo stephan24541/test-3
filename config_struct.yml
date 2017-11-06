@@ -9,7 +9,7 @@ parameters.yml:
                 field-type: multiChoice
                 field-default: ~
                 field-name: 'choicetype test'
-                field-choices: {eintest: local, eintest2: unlocal, eintest3: {local,unlocal,unlogisch} }       
+                field-choices: {eintest: local, eintest2: unlocal }       
             service_fees:
                 type: title 
                 title-name: 'default Name'
