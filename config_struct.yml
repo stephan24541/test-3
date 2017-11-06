@@ -17,7 +17,7 @@ parameters.yml:
                 type: field
                 field-type: multiChoice
                 field-default: ~
-                field-name: 'choicetype test'
+                field-name: 'choicetype test2'
                 field-choices: {eintest: local, eintest2: unlocal}
                 null-when-empty: true
                 optional: true     
