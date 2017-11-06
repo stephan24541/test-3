@@ -9,7 +9,8 @@ parameters.yml:
                 field-type: multiChoice
                 field-default: ~
                 field-name: 'choicetype test'
-                field-choices: {eintest: local, eintest2: unlocal }       
+                field-choices: {eintest: local, eintest2: unlocal}
+                null-when-empty: true       
             service_fees:
                 type: title 
                 title-name: 'default Name'
@@ -70,6 +71,7 @@ parameters.yml:
                         array-type: collection
                         array-max: 5
                         array-merge: true
+                        null-when-empty: true
                         childs:
                             0:
                                 type: field
