@@ -42,6 +42,7 @@ parameters.yml:
                                             item_count_modifier:
                                                 type: title
                                                 title-name: 'item_count_modifier'
+                                                optional: true
                                                 childs:
                                                     default_multiplicator:
                                                         type: field
@@ -53,6 +54,7 @@ parameters.yml:
                                                             array-name: 'default name'
                                                             array-type: keyValue
                                                             array-max: 5
+                                                            optional: true
                                                             childs:
                                                                 key:
                                                                     type: field
