@@ -96,3 +96,9 @@ parameters.yml:
                                         array-name: 'array tief'                        
                                         array-type: collection
                                         null-when-empty: true
+                                        childs:
+                                            0:
+                                                type: field
+                                                field-type: text
+                                                field-default: ~
+                                                field-name: tief tiefer
