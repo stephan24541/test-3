@@ -84,7 +84,6 @@ parameters.yml:
                                 type: array 
                                 array-name: 'nicht so tief'
                                 array-type: keyValue
-                                optional: true
                                 childs:
                                     key:
                                         type: field
