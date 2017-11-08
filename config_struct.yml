@@ -101,4 +101,9 @@ parameters.yml:
                                                 field-type: text
                                                 optional: true
                                                 field-default: ~
-                                                field-name: tief tiefer
+                                                field-name: tief tiefer optional
+                                            1:
+                                                type: field
+                                                field-type: text
+                                                field-default: ~
+                                                field-name: tief tiefer nicht optional
