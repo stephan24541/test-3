@@ -80,6 +80,12 @@ parameters.yml:
                                 field-type: integer
                                 field-default: 1
                                 field-name: test
+                            1:
+                                type: field
+                                field-type: choice
+                                field-default: 
+                                field-choices: {enable:hust,doomsday:knopf}
+                                field-name: test
                             segments:
                                 type: array 
                                 array-name: 'nicht so tief'
@@ -97,12 +103,6 @@ parameters.yml:
                                         null-when-empty: true
                                         childs:
                                             0:
-                                                type: field
-                                                field-type: text
-                                                optional: true
-                                                field-default: ~
-                                                field-name: tief tiefer optional
-                                            1:
                                                 type: field
                                                 field-type: text
                                                 field-default: ~
