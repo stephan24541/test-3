@@ -2,7 +2,7 @@ parameters.yml:
     filepath_for_config: 'app/config/parameters.yml'
     parameters:
         type: title 
-        title-name: 'default Name'
+        title-name: 'parameters'
         childs:
             key:
                 type: field
@@ -13,11 +13,11 @@ parameters.yml:
                 null-when-empty: true       
             service_fees:
                 type: title 
-                title-name: 'default Name'
+                title-name: 'service_fees'
                 childs:
                     regular:
                         type: array 
-                        array-name: 'default name'                        
+                        array-name: 'regular'                        
                         array-type: keyValue
                         childs:
                             key:
