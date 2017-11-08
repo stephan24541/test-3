@@ -95,6 +95,7 @@ parameters.yml:
                                         array-name: 'array tief'                        
                                         array-type: collection
                                         null-when-empty: true
+                                        optional: true
                                         childs:
                                             0:
                                                 type: field
