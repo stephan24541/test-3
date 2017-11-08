@@ -80,7 +80,7 @@ parameters.yml:
                                 field-type: integer
                                 field-default: 1
                                 field-name: test
-                            1:
+                            2:
                                 type: field
                                 field-type: choice
                                 field-default: 
