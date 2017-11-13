@@ -182,7 +182,7 @@ parameters.yml:
                         type: field
                         field-type: text
                         field-name: Url
-                        field-default: 'http://10.64.202.98:9200'
+                        field-default: "http://10.64.202.98:9200"
             search_index_name:
                 type: field
                 field-type: text
