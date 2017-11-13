@@ -178,7 +178,6 @@ parameters.yml:
                 type: array
                 array-type: collection
                 array-name: Search Connections
-                childs:
                     url:
                         type: field
                         field-type: text
@@ -296,11 +295,6 @@ parameters.yml:
                                                         field-type: number
                                                         field-name: Default Multiplicator
                                                         field-default: 0.5
-                                                        field-constraints:
-                                                            0:
-                                                                constraint-name: Type
-                                                                constraint-options:
-                                                                    type: float
                                                     segments:
                                                         type: array
                                                         array-type: keyValue
@@ -316,11 +310,6 @@ parameters.yml:
                                                                 field-type: number
                                                                 field-name: Multiplikator
                                                                 field-default: 0.5
-                                                                field-constraints:
-                                                                    0:
-                                                                        constraint-name: Type
-                                                                        constraint-options:
-                                                                            type: float
                                             text_fee:
                                                 type: title
                                                 title-name: Text Fee
@@ -545,7 +534,7 @@ parameters.yml:
                         type: field
                         field-type: text
                         field-name: Local Delivery Path Prefix Override
-                        field-default: ''
+                        field-default: "''"
                     default_scheme:
                         type: field
                         field-type: text
@@ -674,14 +663,24 @@ parameters.yml:
                         field-name: Prefix
                         field-default: jobs
                     value:
-                        type: title
-                        title-name: Configuration
+                        type: array
+                        array-type: keyValue
+                        array-name: Configuration
                         childs:
-                            bundle_layout:
+                            key:
                                 type: field
                                 field-type: text
                                 field-name: Bundle Layout
-                                field-default: 'ggmJobAdBundle:Bundle:bundleLayout.html.twig'
+                                field-default: bundle_layout
+                            value:
+                                type: title
+                                title-name: Configuration
+                                childs:
+                                    bundle_layout:
+                                        type: field
+                                        field-type: text
+                                        field-name: Bundle Layout
+                                        field-default: 'ggmJobAdBundle:Bundle:bundleLayout.html.twig'
             ggm_advertisement.enabled:
                 type: field
                 field-type: boolean
@@ -773,7 +772,7 @@ parameters.yml:
                                 type: field
                                 field-type: text
                                 field-name: Secret
-                                field-default: 'adsasg56875a56874583adsfasdfa4sd85465a'
+                                field-default: '"adsasg56875a56874583adsfasdfa4sd85465a"'
                             region:
                                 type: field
                                 field-type: text
@@ -897,16 +896,19 @@ parameters.yml:
                                                 field-type: text
                                                 field-name: URL
                                                 field-default: 'https://www.meinbezirk.at/ajax/tracking'
+                                                optional: true
                                             token:
                                                 type: field
                                                 field-type: text
                                                 field-name: Token
                                                 field-default: 234nojo4hupg43p2ug423ov42ou3v4iz23f4c2t3v4u2b4h2
+                                                optional: true
                                             legacy:
                                                 type: field
                                                 field-type: boolean
                                                 field-name: Legacy
                                                 field-default: true
+                                                optional: true
                     cockpit:
                         type: title
                         title-name: Cockpit
@@ -1009,7 +1011,7 @@ parameters.yml:
                         type: field
                         field-type: text
                         field-name: Api Key
-                        field-default: '13214hpo14124hoip14313_41poh4314134'
+                        field-default: 13214hpo14124hoip1431341poh4314134
             ggm.global.google_api_key:
                 type: title
                 field-type: text
@@ -1153,12 +1155,12 @@ parameters.yml:
                                 array-type: collection
                                 array-name: Servers
                                 childs:
-                                    0:
+                                    fqdn:
                                         type: field
                                         field-type: text
                                         field-default: 10.64.202.102
                                         field-name: server
-                                    1:
+                                    port:
                                         type: field
                                         field-type: integer
                                         field-default: 11211
@@ -1177,4 +1179,3 @@ parameters.yml:
                                         field-type: text
                                         field-default: 1440
                                         field-name: 'expiretime'
-
