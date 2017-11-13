@@ -20,7 +20,17 @@ parameters.yml:
                                             field-name: Connection Type
                                             field-default: 'url'
                                         value:
-                                            type: field
-                                            field-type: text
-                                            field-name: Url
-                                            field-default: 'http://10.64.202.98:9200'
+                                            type: array
+                                            array-type: collection
+                                            array-name: Url
+                                            childs:
+                                                0:
+                                                    type: field
+                                                    field-type: text
+                                                    field-name: wahn
+                                                    field-default: 'wahn'
+                                                1:
+                                                    type: field
+                                                    field-type: text
+                                                    field-name: sinn
+                                                    field-default: 'sinn'
