@@ -10,17 +10,18 @@ parameters.yml:
                 children:
                     regular:
                         type: array
-                        array-type: keyValue
+                        array-type: collection
                         array-name: Regular
                         children:
-                            key:
+                            huhu:
                                 type: field
                                 field-type: text
                                 field-name: Full Namespace Path
                                 field-default: null
-                            value:
+                            'ein kr':
                                 type: title
                                 title-name: Namespace Configuration
+                                optional: true
                                 children:
                                     base_fee:
                                         type: field
