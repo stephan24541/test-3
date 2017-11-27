@@ -75,10 +75,10 @@ parameters.yml:
                 field-type: text
                 field-name: Full Namespace Path
                 field-default: null
-                optional: true
             value:
                 type: title
                 title-name: Namespace Configuration
+                optional: true
                 children:
                     base_fee:
                         type: field
