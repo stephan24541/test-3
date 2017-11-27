@@ -1,150 +1,141 @@
-parameters.yml:
-    filepath_for_config: 'app/config/parameters.yml'
-    parameters:
-        type: title
-        title-name: Parameters
-        children:
-            service_fees:
-                type: title
-                title-name: Service Fees
-                children:
-                    regular:
-                        type: array
-                        array-type: collection
-                        array-name: Regular
-                        children:
-                            huhu:
-                                type: field
-                                field-type: text
-                                field-name: Full Namespace Path
-                                field-default: null
-                            'ein kr':
-                                type: title
-                                title-name: Namespace Configuration
-                                optional: true
-                                children:
-                                    base_fee:
-                                        type: field
-                                        field-type: integer
-                                        field-name: Base Fee
-                                        field-default: 0
-                                    options:
-                                        type: title
-                                        title-name: Options
-                                        optional: true
-                                        children:
-                                            item_count_modifier:
-                                                type: title
-                                                title-name: Item Count Modifier
-                                                optional: true
-                                                children:
-                                                    default_multiplicator:
-                                                        type: field
-                                                        field-type: number
-                                                        field-name: Default Multiplicator
-                                                        field-default: 0.5
-                                                    segments:
-                                                        type: array
-                                                        array-type: keyValue
-                                                        array-name: Segments
-                                                        children:
-                                                            key:
-                                                                type: field
-                                                                field-type: integer
-                                                                field-name: Anzahl Elemente
-                                                                field-default: 0
-                                                            value:
-                                                                type: field
-                                                                field-type: number
-                                                                field-name: Multiplikator
-                                                                field-default: 0.5
-                                            text_fee:
-                                                type: title
-                                                title-name: Text Fee
-                                                optional: true
-                                                children:
-                                                    unit:
-                                                        type: field
-                                                        field-type: text
-                                                        field-name: Unit
-                                                        field-default: 'char|block'
-                                                    unit_length:
-                                                        type: field
-                                                        field-type: integer
-                                                        field-name: Unit Length
-                                                        field-default: 5
-                                                    unit_fee:
-                                                        type: field
-                                                        field-type: integer
-                                                        field-name: Unit Fee
-                                                        field-default: 10
-                    commercial:
-                        type: array
-                        array-type: keyValue
-                        array-name: Commercial
-                        children:
-                            key:
-                                type: field
-                                field-type: text
-                                field-name: Full Namespace Path
-                                field-default: null
-                            value:
-                                type: title
-                                title-name: Namespace Configuration
-                                children:
-                                    base_fee:
-                                        type: field
-                                        field-type: integer
-                                        field-name: Base Fee
-                                        field-default: 0
-                                    options:
-                                        type: title
-                                        title-name: Options
-                                        optional: true
-                                        children:
-                                            item_count_modifier:
-                                                type: title
-                                                title-name: Item Count Modifier
-                                                optional: true
-                                                children:
-                                                    default_multiplicator:
-                                                        type: field
-                                                        field-type: number
-                                                        field-name: Default Multiplicator
-                                                        field-default: 0.5
-                                                    segments:
-                                                        type: array
-                                                        array-type: keyValue
-                                                        array-name: Segments
-                                                        children:
-                                                            key:
-                                                                type: field
-                                                                field-type: integer
-                                                                field-name: Anzahl Elemente
-                                                                field-default: 0
-                                                            value:
-                                                                type: field
-                                                                field-type: number
-                                                                field-name: Multiplikator
-                                                                field-default: 0.5
-                                            text_fee:
-                                                type: title
-                                                title-name: Text Fee
-                                                optional: true
-                                                children:
-                                                    unit:
-                                                        type: field
-                                                        field-type: text
-                                                        field-name: Unit
-                                                        field-default: 'char|block'
-                                                    unit_length:
-                                                        type: field
-                                                        field-type: integer
-                                                        field-name: Unit Length
-                                                        field-default: 5
-                                                    unit_fee:
-                                                        type: field
-                                                        field-type: integer
-                                                        field-name: Unit Fee
-                                                        field-default: 10
+
+regular:
+    type: array
+    array-type: collection
+    array-name: Regular
+    children:
+        huhu:
+            type: field
+            field-type: text
+            field-name: Full Namespace Path
+            field-default: null
+        'ein kr':
+            type: title
+            title-name: Namespace Configuration
+            optional: true
+            children:
+                base_fee:
+                    type: field
+                    field-type: integer
+                    field-name: Base Fee
+                    field-default: 0
+                options:
+                    type: title
+                    title-name: Options
+                    optional: true
+                    children:
+                        item_count_modifier:
+                            type: title
+                            title-name: Item Count Modifier
+                            optional: true
+                            children:
+                                default_multiplicator:
+                                    type: field
+                                    field-type: number
+                                    field-name: Default Multiplicator
+                                    field-default: 0.5
+                                segments:
+                                    type: array
+                                    array-type: keyValue
+                                    array-name: Segments
+                                    children:
+                                        key:
+                                            type: field
+                                            field-type: integer
+                                            field-name: Anzahl Elemente
+                                            field-default: 0
+                                        value:
+                                            type: field
+                                            field-type: number
+                                            field-name: Multiplikator
+                                            field-default: 0.5
+                        text_fee:
+                            type: title
+                            title-name: Text Fee
+                            optional: true
+                            children:
+                                unit:
+                                    type: field
+                                    field-type: text
+                                    field-name: Unit
+                                    field-default: 'char|block'
+                                unit_length:
+                                    type: field
+                                    field-type: integer
+                                    field-name: Unit Length
+                                    field-default: 5
+                                unit_fee:
+                                    type: field
+                                    field-type: integer
+                                    field-name: Unit Fee
+                                    field-default: 10
+commercial:
+    type: array
+    array-type: keyValue
+    array-name: Commercial
+    children:
+        key:
+            type: field
+            field-type: text
+            field-name: Full Namespace Path
+            field-default: null
+        value:
+            type: title
+            title-name: Namespace Configuration
+            children:
+                base_fee:
+                    type: field
+                    field-type: integer
+                    field-name: Base Fee
+                    field-default: 0
+                options:
+                    type: title
+                    title-name: Options
+                    optional: true
+                    children:
+                        item_count_modifier:
+                            type: title
+                            title-name: Item Count Modifier
+                            optional: true
+                            children:
+                                default_multiplicator:
+                                    type: field
+                                    field-type: number
+                                    field-name: Default Multiplicator
+                                    field-default: 0.5
+                                segments:
+                                    type: array
+                                    array-type: keyValue
+                                    array-name: Segments
+                                    children:
+                                        key:
+                                            type: field
+                                            field-type: integer
+                                            field-name: Anzahl Elemente
+                                            field-default: 0
+                                        value:
+                                            type: field
+                                            field-type: number
+                                            field-name: Multiplikator
+                                            field-default: 0.5
+                        text_fee:
+                            type: title
+                            title-name: Text Fee
+                            optional: true
+                            children:
+                                unit:
+                                    type: field
+                                    field-type: text
+                                    field-name: Unit
+                                    field-default: 'char|block'
+                                unit_length:
+                                    type: field
+                                    field-type: integer
+                                    field-name: Unit Length
+                                    field-default: 5
+                                unit_fee:
+                                    type: field
+                                    field-type: integer
+                                    field-name: Unit Fee
+                                    field-default: 10
 
