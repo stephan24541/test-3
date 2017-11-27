@@ -1,4 +1,5 @@
-
+parameters.yml
+filepath_for_config = "ein pfad ein pfad den jeder mal geht"
 regular:
     type: array
     array-type: collection
