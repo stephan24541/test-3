@@ -30,7 +30,7 @@ parameters.yml:
                                 field-type: number
                                 field-name: Default Multiplicator
                                 field-default: 0.5
-                                field-constraint:
+                                field-constraints:
                                     -
                                         constraint-name: range
                                         constraint-options:
