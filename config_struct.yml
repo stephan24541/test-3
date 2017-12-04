@@ -30,6 +30,12 @@ parameters.yml:
                                 field-type: number
                                 field-name: Default Multiplicator
                                 field-default: 0.5
+                                field-constraint:
+                                    -
+                                        constraint-name: range
+                                        constraint-options:
+                                            min: 20
+                                            max: 60
                             segments:
                                 type: array
                                 array-type: keyValue
