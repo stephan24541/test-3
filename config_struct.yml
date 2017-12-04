@@ -1,76 +1,20 @@
 parameters.yml:
     filepath_for_config: "ein pfad ein pfad den jeder mal geht"
-    huhu:
-        type: field
-        field-type: text
-        field-name: Full Namespace Path
-        field-default: null
-    'ein kr':
+    test:
         type: title
-        title-name: Namespace Configuration
-        optional: true
+        title-name: test wegen constraints
         children:
-            base_fee:
+            ein feld:
                 type: field
                 field-type: integer
-                field-name: Base Fee
-                field-default: 0
-            options:
-                type: title
-                title-name: Options
+                field-name: ein feld zum testen
                 optional: true
-                children:
-                    item_count_modifier:
-                        type: title
-                        title-name: Item Count Modifier
-                        optional: true
-                        children:
-                            default_multiplicator:
-                                type: field
-                                field-type: number
-                                field-name: Default Multiplicator
-                                field-default: 0.5
-                                field-constraints:
-                                    -
-                                        constraint-name: range
-                                        constraint-options:
-                                            min: 20
-                                            max: 60
-                            segments:
-                                type: array
-                                array-type: keyValue
-                                array-name: Segments
-                                children:
-                                    key:
-                                        type: field
-                                        field-type: integer
-                                        field-name: Anzahl Elemente
-                                        field-default: 0
-                                    value:
-                                        type: field
-                                        field-type: number
-                                        field-name: Multiplikator
-                                        field-default: 0.5
-                    text_fee:
-                        type: title
-                        title-name: Text Fee
-                        optional: true
-                        children:
-                            unit:
-                                type: field
-                                field-type: text
-                                field-name: Unit
-                                field-default: 'char|block'
-                            unit_length:
-                                type: field
-                                field-type: integer
-                                field-name: Unit Length
-                                field-default: 5
-                            unit_fee:
-                                type: field
-                                field-type: integer
-                                field-name: Unit Fee
-                                field-default: 10
+                field-constraints:
+                    -
+                        constraint-name: range
+                        constraint-options:
+                            min: 20
+                            max: 60
     commercial:
         type: array
         array-type: keyValue
