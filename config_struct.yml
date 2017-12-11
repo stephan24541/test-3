@@ -2,7 +2,7 @@ parameters.yml:
     filepath_for_config: "ein pfad ein pfad den jeder mal geht"
     commercial:
         type: array
-        array-type: keyValue
+        array-type: key-value
         array-name: Commercial
         children:
             key:
@@ -41,7 +41,7 @@ parameters.yml:
                                                     max: 4000
                                     segments:
                                         type: array
-                                        array-type: keyValue
+                                        array-type: key-value
                                         array-name: Segments
                                         children:
                                             key:
