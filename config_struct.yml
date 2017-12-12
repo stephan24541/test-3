@@ -51,7 +51,7 @@ parameters.yml:
                                                 field-default: 0
                                             value:
                                                 type: field
-                                                field-type: multiple-choice
+                                                field-type: multi-choice
                                                 field-name: test
                                                 field-choices: 
                                                     12: hallo
