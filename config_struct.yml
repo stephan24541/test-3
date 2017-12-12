@@ -53,6 +53,7 @@ parameters.yml:
                                                 type: field
                                                 field-type: multi-choice
                                                 field-name: test
+                                                empty-string-when-null: true
                                                 field-choices: 
                                                     12: hallo
                                                     24: huhu
