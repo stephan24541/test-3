@@ -51,7 +51,10 @@ parameters.yml:
                                                 field-default: 0
                                             value:
                                                 type: field
-                                                field-type: number
-                                                field-name: Multiplikator
-                                                field-default: 0.5
+                                                field-type: multiple-choice
+                                                field-name: test
+                                                field-choices: 
+                                                    12: hallo
+                                                    24: huhu
+                                                    test: testing
                         
