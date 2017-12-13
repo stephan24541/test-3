@@ -37,7 +37,7 @@ parameters.yml:
                                             -
                                                 constraint-name: range
                                                 constraint-options: 
-                                                    min: 20
+                                                    min: 5077
                                                     max: 4000
                                     segments:
                                         type: array
