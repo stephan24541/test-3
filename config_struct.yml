@@ -328,9 +328,6 @@ parameters.yml:
                 field-type: text
                 field-name: Portal Domain
                 field-default: 'http://www.meinbezirk.at/'
-                field-constraints:
-                    0:
-                        constraint-name: url
             ggm.global.phone_country_codes:
                 type: array
                 array-type: key-value
@@ -474,11 +471,6 @@ parameters.yml:
                                                         field-type: number
                                                         field-name: Default Multiplicator
                                                         field-default: 0.5
-                                                        field-constraints:
-                                                            0:
-                                                                constraint-name: type
-                                                                constraint-options:
-                                                                    type: float
                                                     segments:
                                                         type: array
                                                         array-type: key-value
@@ -495,11 +487,6 @@ parameters.yml:
                                                                 field-type: number
                                                                 field-name: Multiplikator
                                                                 field-default: 0.5
-                                                                field-constraints:
-                                                                    0:
-                                                                        constraint-name: type
-                                                                        constraint-options:
-                                                                            type: float
                                             text_fee:
                                                 type: title
                                                 title-name: Text Fee
