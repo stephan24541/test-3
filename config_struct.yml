@@ -31,13 +31,15 @@ bootstrap.yml:
                         children:
                             enabled:
                                 type: field
-                                field-type: boolean
-                                field-default: false
+                                field-type: choice
                                 field-name: Enabled
+                                field-choices: {1: asd,2:def,3:lol}
+                                field-default: {1}
                             root:
                                 type: field
-                                field-type: boolean
-                                field-default: false
+                                field-type: multi-choice
+                                field-default: 1
+                                field-choices: {1: asd,2:def,3:lol}
                                 field-name: Root
                             prefix:
                                 type: field
