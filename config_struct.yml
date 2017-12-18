@@ -18,9 +18,9 @@ bootstrap.yml:
                             min-message: Eingabe zu kurz
                             max-message: Eingabe zu lang
                     1:
-                        constraint-name: notBlank
+                        constraint-name: not-blank
                     2:
-                        constraint-name: notBlank
+                        constraint-name: not-blank
             ggm.bootstrap.config:
                 type: title
                 title-name: Bootstrap Config
