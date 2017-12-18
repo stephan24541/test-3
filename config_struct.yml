@@ -34,7 +34,7 @@ bootstrap.yml:
                                 field-type: choice
                                 field-name: Enabled
                                 field-choices: {1: asd,2:def,3:lol}
-                                field-default: {1:asd}
+                                field-default: 1
                             root:
                                 type: field
                                 field-type: multi-choice
