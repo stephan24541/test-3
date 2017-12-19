@@ -1,5 +1,5 @@
 bootstrap.yml:
-    filepath_for_config: 'app/config/bootstrapo.yml'
+    filepath_for_config: 'app/config/bootstrap.yml'
     parameters:
         type: title
         title-name: Parameters
