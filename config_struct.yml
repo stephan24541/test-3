@@ -38,7 +38,7 @@ bootstrap.yml:
                             root:
                                 type: field
                                 field-type: multi-choice
-                                field-default: {1: asd, 2:def}
+                                field-default: {0:1, 1:2}
                                 field-choices: {1:as, 2:de}
                                 field-name: Root
                             prefix:
