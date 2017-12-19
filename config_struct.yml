@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-ssbootstrap_yml:
-            parameters:
-=======
 bootstrap.yml:
     filepath_for_config: 'app/config/bootstrap.yml'
     parameters:
